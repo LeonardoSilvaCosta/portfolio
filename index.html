@@ -22,7 +22,7 @@
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="imagens/bg.jpg" alt="">
             </div>
@@ -36,11 +36,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="" class="menu-link"></a>Home</li>
-                    <li class="menu-item"><a href="" class="menu-link"></a>Conhecimento</li>
-                    <li class="menu-item"><a href="" class="menu-link"></a>Projetos</li>
-                    <li class="menu-item"><a href="" class="menu-link"></a>Contatos</li>
-                    <li class="menu-item"><a href="" class="menu-link"></a>Orçamento</li>
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -50,7 +50,7 @@
             </div>
         </aside>
 
-        <section class="secao-conhecimentos">
+        <section class="secao-conhecimentos" id="conhecimentos">
             <div class="secao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="secao-projetos">
+        <section class="secao-projetos" id="projetos">
             <div class="secao-header">
                 <h1>Projetos</h1>
             </div>
@@ -158,7 +158,7 @@
             </div>
         </section>
 
-        <section class="secao-contato">
+        <section class="secao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -182,7 +182,7 @@
             </div>
         </section>
 
-        <section class="secao-orcamento">
+        <section class="secao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -202,11 +202,31 @@
                         </div>
                     </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
                     <button type="submit" class="btn btn-orcamento">Enviar</button>
                 </form>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2020, ETCIA DS - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
     </div>
     
